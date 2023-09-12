@@ -70,9 +70,7 @@ https://docs.metaplex.com/assets/files/assets-ff6bd873ecd07b49c86faf3c7aab82d2.z
 # Update Candy Guards added Candy Machine V3
 ./sugarCM3 guard update
 
-# Setup Key Stroke's Candy Machine V3 UI
-# Download here: https://downloads.key-strokes.com/cm-v3-ui-v1
-cd "KeyStrokes Candy Machine UI - V1/"
+# Setup Candy Machine V3 UI
 
 # Copy env file
 cp .env.example .env
@@ -80,85 +78,6 @@ cp .env.example .env
 # Install dependencies
 npm install
 
-# Run Key Stroke's Candy Machine V3 UI
+# Run Candy Machine V3 UI
 # http://localhost:3000
 npm run dev
-
-
-# "groups": [
-#       {
-#         "label": "OG",
-#         "guards": {
-# 					"solPayment": {
-# 						"value": 0.1,
-# 						"destination": "3sFDKYCFkWHwfVWzkWj7RL3poZtgWDqJmgPny2DVcV87"
-# 					},
-# 					"startDate": {
-# 						"date": "2023-09-12T03:00:00Z"
-# 					},
-# 					"endDate": {
-# 						"date": "2024-09-10T03:00:00Z"
-# 					},
-#           "botTax": {
-#             "value": 0.01,
-#             "lastInstruction": true
-#           },
-#           "mintLimit": {
-#             "id": 1,
-#             "limit": 2
-#           },
-#           "allowList": {
-#             "merkleRoot": "8ad141b7ee85127a4e75a24a5978578bf6671156747e97765e5f752e6d72d393"
-#           }
-# 				}
-#       },
-#       {
-# 					"label": "WL",
-# 					"guards": {
-# 						"solPayment": {
-# 							"value": 0.2,
-# 							"destination": "3sFDKYCFkWHwfVWzkWj7RL3poZtgWDqJmgPny2DVcV87"
-# 						},
-# 						"startDate": {
-# 							"date": "2023-09-12T04:00:00Z"
-# 						},
-# 						"endDate": {
-# 							"date": "2024-09-10T03:00:00Z"
-# 						},
-# 						"botTax": {
-# 							"value": 0.02,
-# 							"lastInstruction": true
-# 						},
-# 						"mintLimit": {
-# 							"id": 2,
-# 							"limit": 1
-# 						},
-# 						"allowList": {
-# 							"merkleRoot": "2420a6738041daf3c04ae841170636c06e2434e201484312f57bad55603ecea8"
-# 						}
-# 					}
-# 			},
-#       {
-# 				"label": "public",
-# 				"guards": {
-# 					"solPayment": {
-# 						"value": 0.3,
-# 						"destination": "3sFDKYCFkWHwfVWzkWj7RL3poZtgWDqJmgPny2DVcV87"
-# 					},
-# 					"startDate": {
-# 						"date": "2023-09-12T05:00:00Z"
-# 					},
-# 					"endDate": {
-# 						"date": "2024-09-10T03:00:00Z"
-# 					},
-# 					"botTax": {
-# 						"value": 0.03,
-# 						"lastInstruction": true
-# 					},
-# 					"mintLimit": {
-# 						"id": 3,
-# 						"limit": 1
-# 					}
-# 				}
-# 			}
-#     ]
