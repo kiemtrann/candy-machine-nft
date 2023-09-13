@@ -17,80 +17,71 @@
 	"pinataConfig": null,
 	"hiddenSettings": null,
 	"guards": {
-		"default": {},
+    "default": {},
 		"groups": [
 			{
 				"label": "OG",
 				"guards": {
+					"mintLimit": {
+						"id": 0,
+						"limit": 3
+					},
 					"solPayment": {
 						"value": 0.1,
 						"destination": "3sFDKYCFkWHwfVWzkWj7RL3poZtgWDqJmgPny2DVcV87"
 					},
 					"startDate": {
-						"date": "2023-09-12T03:00:00Z"
-					},
-					"endDate": {
-						"date": "2024-09-12T03:00:00Z"
+						"date": "2023-09-13T00:00:00Z"
 					},
 					"botTax": {
 						"value": 0.01,
 						"lastInstruction": true
 					},
+					"allowList": {
+						"merkleRoot": "b96143f39af09f0b09de8e2cc63fd5d1dc37d2ee511c28d0cc20651fcb471bef"
+					}
+				}
+			},
+      {
+				"label": "WL",
+				"guards": {
 					"mintLimit": {
 						"id": 1,
 						"limit": 2
 					},
-					"allowList": {
-						"merkleRoot": "8ad141b7ee85127a4e75a24a5978578bf6671156747e97765e5f752e6d72d393"
-					}
-				}
-			},
-			{
-				"label": "WL",
-				"guards": {
 					"solPayment": {
 						"value": 0.2,
 						"destination": "3sFDKYCFkWHwfVWzkWj7RL3poZtgWDqJmgPny2DVcV87"
 					},
 					"startDate": {
-						"date": "2023-09-12T04:00:00Z"
-					},
-					"endDate": {
-						"date": "2024-09-12T04:00:00Z"
+						"date": "2023-09-13T00:00:00Z"
 					},
 					"botTax": {
 						"value": 0.02,
 						"lastInstruction": true
 					},
-					"mintLimit": {
-						"id": 2,
-						"limit": 1
-					},
 					"allowList": {
-						"merkleRoot": "2420a6738041daf3c04ae841170636c06e2434e201484312f57bad55603ecea8"
+						"merkleRoot": "b3c475f987405e13d13d3f4210d47db41822bdcced45e7d480930d1a24ef7f18"
 					}
 				}
 			},
-			{
+      {
 				"label": "public",
 				"guards": {
+          "mintLimit": {
+						"id": 2,
+						"limit": 1
+					},
 					"solPayment": {
 						"value": 0.3,
 						"destination": "3sFDKYCFkWHwfVWzkWj7RL3poZtgWDqJmgPny2DVcV87"
 					},
 					"startDate": {
-						"date": "2023-09-12T05:00:00Z"
-					},
-					"endDate": {
-						"date": "2024-09-12T05:00:00Z"
+						"date": "2023-09-13T00:00:00Z"
 					},
 					"botTax": {
 						"value": 0.03,
 						"lastInstruction": true
-					},
-					"mintLimit": {
-						"id": 3,
-						"limit": 1
 					}
 				}
 			}
