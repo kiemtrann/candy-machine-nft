@@ -14,14 +14,14 @@ pwd
 # /Users/kiem.tran/candy-machine-cnft
 
 # Setup Wallets
-## Owner: BcycxxuRVVhEHrxNUARtRTtmG4ow8RVsUE3xgXv2jwmE
-solana-keygen new --outfile /Users/kiem.tran/candy-machine-cnft/CMV3Owner.json
-## Creator: 8tQrmq49LadEnbr8Yb9yufSYcdvGpr9QXJ3gwnsU4vx
-solana-keygen new --outfile /Users/kiem.tran/candy-machine-cnft/CMV3Creator.json
+## Owner: 
+solana-keygen new --outfile /Users/kiem.tran/candy-machine-cnft/owner.json
+## Creator: 
+solana-keygen new --outfile /Users/kiem.tran/candy-machine-cnft/creator.json
 
 # Setup Solana CLI
-solana config set --keypair /Users/kiem.tran/candy-machine-cnft/CMV3Owner.json
-solana config set --url https://metaplex.devnet.rpcpool.com/
+solana config set --keypair /Users/kiem.tran/candy-machine-cnft/owner.json
+solana config set --url https://api.devnet.solana.com
 solana config get
 
 # Fund Wallets
